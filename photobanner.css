@@ -1,0 +1,75 @@
+/*Stuff for rolling banner*/
+    .photobanner {
+      width: 7000px;
+    }
+    /*speed up banner on bigger screens...*/
+  @media (min-width: 768px) {
+    .first-image {
+      -webkit-animation: bannermove 60s linear infinite;
+      -moz-animation: bannermove 60s linear infinite;
+      -ms-animation: bannermove 60s linear infinite;
+      -o-animation: bannermove 60s linear infinite;
+      animation: bannermove 60s linear infinite; /*to apply*/
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .first-image {
+      -webkit-animation: bannermove 70s linear infinite;
+      -moz-animation: bannermove 70s linear infinite;
+      -ms-animation: bannermove 70s linear infinite;
+      -o-animation: bannermove 70s linear infinite;
+      animation: bannermove 70s linear infinite; /*to apply*/
+    }
+  }
+    /*keyframe animations*/
+    
+    
+    @keyframes "bannermove" {
+      0% {
+        margin-left: 0px;
+      }
+      100% {
+        margin-left: -5080px;
+      }
+    }
+    
+    @-moz-keyframes "bannermove" {
+      0% {
+        margin-left: 0px;
+      }
+      100% {
+        margin-left: -5080px;
+      }
+    }
+    
+    @-webkit-keyframes "bannermove" {
+      0% {
+        margin-left: 0px;
+      }
+      100% {
+        margin-left: -5080px; /*to apply*/
+      }
+    }
+    
+    @-ms-keyframes "bannermove" {
+      0% {
+        margin-left: 0px;
+      }
+      100% {
+        margin-left: -5080px;
+      }
+    }
+    
+    @-o-keyframes "bannermove" {
+      0% {
+        margin-left: 0px;
+      }
+      100% {
+        margin-left: -5080px;
+      }
+    }
+    
+    .photobanner-container {
+      overflow: hidden;
+    }
